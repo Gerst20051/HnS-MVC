@@ -1,0 +1,378 @@
+/* Begin CSS Reset */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+background:transparent;
+border:0;
+font-size:100%;
+margin:0;
+outline:0;
+padding:0;
+vertical-align:baseline;
+}
+
+html {
+background-color:#fff;
+color:#000;
+}
+
+body {
+font:13px/1.231 sans-serif;
+*font-size:small;
+line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+display:block;
+}
+
+nav ul, nav li {
+list-style:none;
+margin:0;
+list-style-image:none;
+}
+
+blockquote, q {
+quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+content:'';
+content:none;
+}
+
+a {
+background:transparent;
+font-size:100%;
+margin:0;
+padding:0;
+vertical-align:baseline;
+}
+
+a:hover, a:active {
+outline:none;
+}
+
+ins {
+background-color:#ff9;
+color:#000;
+text-decoration:none;
+}
+
+mark {
+background-color:#ff9;
+color:#000; 
+font-style:italic;
+font-weight:bold;
+}
+
+del {
+text-decoration:line-through;
+}
+
+abbr[title], dfn[title] {
+border-bottom:1px dotted;
+cursor:help;
+}
+
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+
+hr {
+border:0;   
+border-top:1px solid #ccc;
+display:block;
+height:1px;
+margin:1em 0;
+padding:0;
+}
+
+input, select {
+vertical-align:middle;
+}
+
+button, input[type="button"], input[type="image"], input[type="submit"], label {
+cursor:pointer;
+}
+
+button, input, select, textarea {
+font:99% sans-serif;
+margin:0;
+}
+
+code, kbd, pre, samp {
+font-family:monospace, sans-serif;
+}
+
+/* End CSS Reset */
+/* Begin CSS Base */
+
+html, body {
+font-family:tahoma, arial, verdana, sans-serif;
+}
+
+html {
+overflow-y:scroll;
+}
+
+body {
+user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-webkit-user-select:none;
+}
+
+h1 { font-size:138.5%; }
+h2 { font-size:123.1%; }
+h3 { font-size:108%; }
+
+h1, h2, h3 {
+margin:1em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-weight:bold;
+}
+
+abbr, acronym {
+border-bottom:1px dotted #000;
+cursor:help;
+}
+
+em {
+font-style:italic;
+}
+
+blockquote, ul, ol, dl {
+margin:1em;
+}
+
+ol, ul, dl {
+margin-left:2em;
+}
+
+ol {
+list-style-type:decimal;
+}
+
+ol li {
+list-style:decimal outside;
+}
+
+ul li {
+list-style:disc outside;
+}
+
+dl dd {
+margin-left:1em;
+}
+
+th, td {
+border:1px solid #000;
+padding:.5em;
+}
+
+th {
+font-weight:bold;
+text-align:center;
+}
+
+caption {
+margin-bottom:.5em;
+text-align:center;
+}
+
+p, fieldset, table {
+margin-bottom:1em;
+}
+
+small {
+font-size:85%;
+}
+
+td {
+vertical-align:top;
+}
+
+sub, sup {
+font-size:75%;
+line-height:0;
+position:relative;
+}
+
+sub {
+bottom:-0.25em;
+}
+
+sup {
+top:-0.5em;
+}
+
+pre {
+padding:15px;
+white-space:pre;
+white-space:pre-wrap;
+word-wrap:break-word;
+}
+
+textarea {
+overflow:auto;
+}
+
+::-moz-selection {
+background:#ff5e99;
+color:#fff;
+text-shadow:none;
+}
+
+::selection {
+background:#ff5e99;
+color:#fff;
+text-shadow:none;
+}
+
+button {
+overflow:visible;
+width:auto;
+}
+
+body, select, input, textarea {
+color:#444;
+font-family:georgia, serif;
+}
+
+a, a:active, a:visited {
+color:#607890;
+}
+
+a:hover {
+color:#036;
+}
+
+/* End CSS Base */
+
+/**
+   * Primary Styles
+   *
+   * Author: Andrew Gerst
+   */
+
+html {
+
+}
+
+header {
+display:table;
+margin:0 auto;
+}
+
+header h1 {
+font-family:arial,sans-serif;
+font-size:26pt;
+position:relative;
+text-shadow:0 2px 2px rgb(255,255,255), 0 4px 8px rgba(0,0,0,.4);
+text-transform:uppercase;
+}
+
+header h1 span {
+color:rgb(114,115,113);
+-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,0)));
+position:absolute;
+}
+
+header h1:after{
+content:"Social HnS";
+color:rgb(63,63,63);
+}
+
+header .left {
+display:table-cell;
+padding-right:22px;
+width:620px;
+}
+
+header .right {
+display:table-cell;
+width:350px;
+}
+
+header .gradient {
+background-image:-moz-radial-gradient(center 65%,circle farthest-side,#8fb5c8 10%,rgba(143,181,200,0) 100%);
+background-image:-webkit-gradient(radial,center 65%,40,center center,350,from(#8fb5c8),to(rgba(143,181,200,0)));
+height:417px;
+position:absolute;
+right:50px;
+top:0;
+width:750px;
+z-index:-1;
+}
+
+nav {
+
+}
+
+body {
+background:url(../img/bg.jpg);
+}
+
+#content {
+display:table;
+margin:0 auto;
+z-index:2;
+}
+
+#content section {
+display:table-cell;
+padding-right:22px;
+width:620px;
+}
+
+#content aside {
+display:table-cell;
+width:370px;
+}
+
+#content aside h3 {
+color:#fff;
+font-size:13pt;
+font-weight:bold;
+margin-bottom:16px;
+text-shadow:0 1px 0 rgba(0,0,0,0.3);
+}
+
+#content aside h3 em {
+font-style:normal;
+font-weight:300;
+}
+
+footer {
+
+}
+
+@media print {
+*{background:transparent !important;color:black !important;text-shadow:none !important;filter:none !important;-ms-filter:none !important}
+a,a:visited{color:#444 !important;text-decoration:underline}
+a[href]:after{content:" (" attr(href) ")"}
+abbr[title]:after{content:" (" attr(title) ")"}
+a[href^="javascript:"]:after,a[href^="#"]:after{content:""}
+pre,blockquote{border:1px solid #999;page-break-inside:avoid}
+thead{display:table-header-group}
+tr,img{page-break-inside:avoid}
+@page{margin:0.5cm}
+p,h2, h3{orphans:3;widows:3}
+h2,h3{page-break-after:avoid}
+}
